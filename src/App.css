@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #0077b6;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  width: 40%;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: #ffa62b;
+  margin-bottom: 1.5em;
+}
+
+.form-container {
+  width: 125%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1.5em;
+  background-color: #0077b6;
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+.form-container > div {
+  display: flex;
+  align-items: left;
+  width: 120%;
+}
+
+.form-container > div > label {
+  color: #ffa62b;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 20%;
+  text-align: left;
+}
+
+.form-container > div > input {
+  width: 60%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  text-align: left;
+}
+
+.form-container > div > input::placeholder {
+  color: #333;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1em;
+  width: auto;
+}
+
+button:hover {
+  background-color: #e0554d;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.toggle-button {
+  padding: 12px 20px;
+  background-color: #ffd166;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+  width: auto;
+}
+
+.toggle-button:hover {
+  background-color: #f4a261;
+}
+
+.toggle-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5em;
+    width: 80%;
+  }
+
+  .form-container > div > label,
+  .form-container > div > input {
+    font-size: 0.9rem;
+  }
+
+  button,
+  .toggle-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
